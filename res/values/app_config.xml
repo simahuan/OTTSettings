@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="setting_names">
+        <item>Backlight</item>
+        <item>Contrast</item>
+        <item>Brightness</item>
+        <item>Sharpness</item>
+        <item>Color</item>
+        <item>Tint</item>
+    </string-array>
+    <string-array name="setting_values">
+        <item>Standard</item>
+        <item>Cinema</item>
+        <item>Vivid</item>
+        <item>Game</item>
+        <item>Custom</item>
+    </string-array>
+
+</resources>

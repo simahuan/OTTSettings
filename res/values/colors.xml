@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- OTTBox APP -->
+        
+    <!-- (公共)基础颜色,可扩展(不建议修改) -->
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="gray">#808080</color>
+	<color name="red">#FF0000</color>
+	<color name="gold">#FFD700</color>
+	<color name="yellow">#FFFF00</color>
+	<color name="green">#008000</color>
+	<color name="blue">#0000FF</color>
+	<color name="purple">#800080</color>
+	<color name="pink">#FFC0CB</color>
+	<color name="orange">#FFA500</color>
+	<color name="lemonyellow">#FFFACD</color>
+	<color name="graywhite">#F5F5F5</color>
+	<color name="grayslate">#708090</color>
+	<color name="lightblue">#0083FF</color>
+	<color name="darkblue">#c0044081</color>
+	
+	<!-- (公共)全透明与半透明,可添加指定颜色透明 -->
+    <color name="full_transparent">#00000000</color>
+    <color name="half_transparent">#aa000000</color>
+    
+    
+    <color name="frame_button_text_nor">#033a5c</color>
+    <color name="frame_button_text_select">#FFFFFF</color>
+    
+    <!-- 宫格,列表(子视图)颜色定义,可扩展 -->
+    <color name="griditem_transparent">#00000000</color>
+    <color name="griditem_black">#ff000000</color>
+    <color name="griditem_white">#ffffffff</color>
+    <color name="griditem_blue">#0e5986</color>
+    <color name="griditem_gray">#ff9da19e</color>
+    <color name="griditem_green">#ffe3ffc6</color>
+    
+    
+    
+    <!-- 背景 -->
+    <drawable name="cloud_home_background">#E7E9E8</drawable>
+
+    <color name="file_title_backgroud">#30A3EE</color>
+    <color name="cloud_home_picture1">#F8FAFE</color>
+    <color name="cloud_home_picture2">#E8EBF1</color>
+    <color name="textcolor">#ff000000</color>
+    <color name="backgroundcolor">#ffffffff</color>
+    <color name="tab_selected_bg">#C4E1E1</color>
+    <color name="lightwhite">#ddd</color>
+    <color name="Color_Gray">#cccccc</color>
+    <color name="deepcolor">#faaa5f</color>
+    <color name="shadowcolor">#333333</color>
+    <color name="naming">#ABABAB</color>
+    <color name="background">#272727</color>
+    <color name="orange_yellow">#9b9ba0</color>
+    <color name="cloud_sd_color_is">#30A3EE</color>
+    <color name="cloud_sd_color_no">#ACAFB7</color>
+
+    <drawable name="semi_black">#80000000</drawable>
+    <drawable name="tv_normal">#ff000000</drawable>
+    <drawable name="gray">#A6A6A0</drawable>
+
+    <color name="remote_connect_text">#FFe78018</color>
+    <color name="remote_disconnect_text">#FF901821</color>
+    <color name="gesture_background">#ff303237</color>
+    <color name="color_hei_8">#00000000</color>
+    <color name="blank">#0f0</color>
+    <color name="blur_bg">#FFFAF0</color>
+    <color name="grey">#808080</color>
+    <color name="right_bg">#696969</color>
+
+    <drawable name="trans">@color/color_hei_8</drawable>
+
+    <!-- 全局背景 -->
+    <color name="bg_light">#F8FAFE</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- banner -->
+    <color name="slide_adv_selected">#30A3EE</color>
+    <color name="slide_adv_normal">#00000000</color>
+    <color name="list_driver">#30A3EE</color>
+    <!-- Grid点击背景 -->
+    <drawable name="grid_bg_default">#F8FAFE</drawable>
+    <drawable name="grid_bg_selected">#E8EBF1</drawable>
+    <drawable name="white">#fff</drawable>
+    <drawable name="optextcolorstar">#A7BACE</drawable>
+    <drawable name="backcolor1">#00000000</drawable>
+    <drawable name="backcolor2">#1b8fda</drawable>
+    <drawable name="upcolor1">#00000000</drawable>
+    <drawable name="upcolor2">#D3D3D3</drawable>
+
+    <!-- 进度条字体颜色 -->
+    <color name="progress_label">#888888</color>
+    <color name="progress_label_error">#00FF0000</color>
+
+    <!-- 多选选择删除模块颜色 -->
+    <color name="del_layout_bg">#4C5763</color>
+    <color name="del_btn_bg">#FC3E39</color>
+    <color name="del_btn_txt">#FFFFFF</color>
+    
+</resources>

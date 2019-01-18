@@ -1,0 +1,65 @@
+<resources>
+
+    <dimen name="txt_35">35.0sp</dimen>
+    <dimen name="txt_32">32.0sp</dimen>
+    <dimen name="txt_31">31.0sp</dimen>
+    <dimen name="txt_30">30.0sp</dimen>
+    <dimen name="txt_29">29.0sp</dimen>
+    <dimen name="txt_28">28.0sp</dimen>
+    <dimen name="txt_27">27.0sp</dimen>
+    <dimen name="txt_26">26.0sp</dimen>
+    <dimen name="txt_25">25.0sp</dimen>
+    <dimen name="txt_24">24.0sp</dimen>
+    <dimen name="txt_23">23.0sp</dimen>
+    <dimen name="txt_22">22.0sp</dimen>
+    <dimen name="txt_21">21.0sp</dimen>
+    <dimen name="txt_20">20.0sp</dimen>
+    <dimen name="txt_19">19.0sp</dimen>
+    <dimen name="txt_18">18.0sp</dimen>
+    <dimen name="txt_17">17.0sp</dimen>
+    <dimen name="txt_16">16.0sp</dimen>
+    <dimen name="txt_15">15.0sp</dimen>
+    <dimen name="txt_14">14.0sp</dimen>
+    <dimen name="txt_13">13.0sp</dimen>
+    <dimen name="txt_12">12.0sp</dimen>
+    <dimen name="txt_11">11.0sp</dimen>
+    <dimen name="txt_10">10.0sp</dimen>
+    <dimen name="txt_9">9.0sp</dimen>
+    <dimen name="txt_8">8.0sp</dimen>
+    <dimen name="txt_7">7.0sp</dimen>
+    
+    <dimen name="space_80">80.0dp</dimen>
+    <dimen name="space_70">70.0dp</dimen>
+    <dimen name="space_60">60.0dp</dimen>
+    <dimen name="space_50">50.0dp</dimen>
+    <dimen name="space_40">40.0dp</dimen>
+    <dimen name="space_35">35.0dp</dimen>
+    <dimen name="space_30">30.0dp</dimen>
+    <dimen name="space_25">25.0dp</dimen>
+    <dimen name="space_20">20.0dp</dimen>
+    <dimen name="space_15">15.0dp</dimen>
+    <dimen name="space_10">10.0dp</dimen>
+    <dimen name="space_9">9.0dp</dimen>
+    <dimen name="space_8">8.0dp</dimen>
+    <dimen name="space_7">7.0dp</dimen>
+    <dimen name="space_6">6.0dp</dimen>
+    <dimen name="space_5">5.0dp</dimen>
+    <dimen name="space_4">4.0dp</dimen>
+    <dimen name="space_3">3.0dp</dimen>
+    <dimen name="space_2">2.0dp</dimen>
+    <dimen name="space_1">1.0dp</dimen>
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="ic_file_icon_width">45dp</dimen>
+    <dimen name="ic_file_icon_height">45dp</dimen>
+    
+    <dimen name="height_40">40dp</dimen>
+    <dimen name="default_height_50">50dp</dimen>
+    <dimen name="height_90">90dp</dimen>
+    
+   	<dimen name="margin_20">20dp</dimen>
+   	
+
+</resources>

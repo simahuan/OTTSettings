@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pisen.ott.settings"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="20" />
+
+    <!-- 屏幕适配 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- 系统升级_访问权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- setting数据库 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 屏保互动 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_DREAM_STATE" />
+    <uses-permission android:name="android.permission.READ_DREAM_STATE" />
+    <uses-permission android:name="com.google.android.gallery3d.permission.PICASA_STORE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 开机监听 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="com.pisen.ott.settings.SettingsApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.pisen.ott.settings.SettingsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 网络设置 -->
+        <activity
+            android:name="com.pisen.ott.settings.network.NetworkSettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pisen.ott.settings.network.BroadbandActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pisen.ott.settings.network.WifiActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pisen.ott.settings.network.WifiDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pisen.ott.settings.network.WifiPasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+
+        <!-- 帐户与安全 -->
+        <activity
+            android:name="com.pisen.ott.settings.security.SecuritySettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+
+        <!-- 图像与声音 -->
+        <activity
+            android:name="com.pisen.ott.settings.graphics.GraphicsSettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pisen.ott.settings.graphics.ResolutionActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pisen.ott.settings.graphics.ZoomDisplacementActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+
+        <!-- 通用设置 -->
+        <activity
+            android:name="com.pisen.ott.settings.common.CommonSettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pisen.ott.settings.common.location.LocationCityActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+
+        <!-- 儿童锁模块 -->
+
+        <activity
+            android:name="com.pisen.ott.settings.common.childlock.ChildLockActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.pisen.ott.settings.common.childlock.ChildLockPasswordChangeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+
+        <!-- 请输入设备名称 -->
+        <activity
+            android:name="com.pisen.ott.settings.common.InputDeviceNameActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <!-- 屏幕保护 -->
+        <activity
+            android:name="com.pisen.ott.settings.common.ScreenProActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+
+        <!-- 系统升级 -->
+        <activity
+            android:name="com.pisen.ott.settings.upgrade.launcher.UpgradeLauncherActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pisen.ott.settings.upgrade.launcher.UpgradeLauncherDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+
+        <!-- 关于模块 -->
+        <activity
+            android:name="com.pisen.ott.settings.about.AboutActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pisen.ott.settings.about.ContackServiceActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pisen.ott.settings.about.LegalInfosActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pisen.ott.settings.about.UserAgreementActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+
+        <!-- 应用程序管理模块 -->
+        <activity
+            android:name="com.pisen.ott.settings.appmanage.AppManageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" />
+
+        <!-- *************************************** 广播声明   ********************************* -->
+        <!-- 开机广播 -->
+        <receiver android:name="com.pisen.ott.service.BootCompletedReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+            </intent-filter>
+        </receiver>
+
+        <!-- *************************************** 服务Service声明   ********************************* -->
+        <!-- 天气信息 -->
+        <service android:name="com.pisen.ott.service.WeatherService" />
+        <service
+            android:name="com.pisen.ott.service.LockScreenService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.pisen.ott.service.lockscreenservice" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

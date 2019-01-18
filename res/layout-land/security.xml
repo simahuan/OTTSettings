@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/settings_actionbar" />
+
+    <com.pisen.ott.widget.FocusLinearLayout
+        android:id="@+id/securitySettingsLayout"
+        style="@style/AppTable" >
+
+        <TextView
+            style="@style/table_title"
+            android:text="安全" />
+
+        <RelativeLayout
+            android:id="@+id/unknownSourceSettings"
+            style="@style/AppTableRow.Top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/table_row_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="安装未知来源的应用" />
+
+            <TextView
+                android:id="@+id/txtUnknownSource"
+                style="@style/table_row_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="已拒绝" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/adbDebugSettings"
+            style="@style/AppTableRow.Bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/table_row_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADB调试" />
+
+            <TextView
+                android:id="@+id/txtUsbDebug"
+                style="@style/table_row_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="已关闭" />
+        </RelativeLayout>
+    </com.pisen.ott.widget.FocusLinearLayout>
+
+</LinearLayout>

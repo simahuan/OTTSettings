@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- head -->
+
+    <include layout="@layout/settings_actionbar" />
+
+    <!-- body -->
+
+    <LinearLayout
+        android:layout_width="@dimen/uitable_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="33dp"
+        android:orientation="vertical" >
+
+        <com.pisen.ott.widget.FocusLinearLayout
+            android:id="@+id/wifiSettingsLayout"
+            style="@style/AppTable" >
+
+            <!-- 开启关闭wifi功能 -->
+
+            <RelativeLayout
+                android:id="@+id/lrel_wifi_switch"
+                style="@style/AppTableRow.Top" >
+
+                <TextView
+                    style="@style/table_row_title"
+                    android:layout_marginLeft="23dp"
+                    android:text="无线局域网" />
+
+                <TextView
+                    android:id="@+id/txt_wifi_switch_title"
+                    style="@style/table_row_content"
+                    android:layout_marginRight="23dp"
+                    android:text="" />
+            </RelativeLayout>
+            <!-- 当前连接的wifi -->
+
+            <RelativeLayout
+                android:id="@+id/lrel_wifi_current"
+                style="@style/AppTableRow.Bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imgWifiCurrentConnectedFlag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/wifi_ic_connected"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_wifi_current_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="TV-Jammy-Wify" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/wifi_ic_lock" />
+
+                    <ImageView
+                        android:id="@+id/imgWifiCurrentSignal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/wifi_ic_4" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/item_ic_arrows" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.pisen.ott.widget.FocusLinearLayout>
+
+        <TextView
+            style="@style/table_title"
+            android:text="可选取的无线网络" />
+        <!-- wifi扫描结果列表 -->
+
+        <com.pisen.ott.widget.FocusListView
+            android:id="@+id/lst_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/settings_actionbar" />
+
+    <com.pisen.ott.widget.FocusLinearLayout
+        android:id="@+id/netSettingsLayout"
+        style="@style/AppTable" >
+
+        <TextView
+            style="@style/table_title"
+            android:text="无线与网络" />
+
+        <RelativeLayout
+            android:id="@+id/wifiSettings"
+            style="@style/AppTableRow.Top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/table_row_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无线网络" />
+
+            <TextView
+                android:id="@+id/setWifi"
+                style="@style/table_row_content_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="设置WIFI" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/netSettings"
+            style="@style/AppTableRow.Bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/table_row_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="宽带连接" />
+
+            <TextView
+                android:id="@+id/setNetWork"
+                style="@style/table_row_content_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="设置PPPOE拨号上网" />
+        </RelativeLayout>
+    </com.pisen.ott.widget.FocusLinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/settings_actionbar" />
+
+    <com.pisen.ott.widget.FocusLinearLayout
+        android:id="@+id/childlockHomepage"
+        style="@style/AppTable" >
+
+        <RelativeLayout
+            android:id="@+id/lrel_open_lock"
+            style="@style/AppTableRow.Top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/table_row_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="儿童锁" />
+
+            <TextView
+                android:id="@+id/txt_isopen_childrenlock"
+                style="@style/table_row_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="关闭" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lrel_modify_password"
+            style="@style/AppTableRow.Bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/table_row_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码修改" />
+
+            <TextView
+                style="@style/table_row_content_readonly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="修改已设置的密码" />
+        </RelativeLayout>
+    </com.pisen.ott.widget.FocusLinearLayout>
+
+    <Button
+        android:id="@+id/btn_ImmediateLock"
+        style="@style/AppButton.Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="立即锁定" />
+
+</LinearLayout>

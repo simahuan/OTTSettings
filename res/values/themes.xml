@@ -1,0 +1,290 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/setting_bg</item>
+        <!-- <item name="android:windowAnimationStyle">@style/AppAnimation.Activity</item> -->
+        <item name="android:textViewStyle">@style/AppTextView</item>
+        <item name="android:buttonStyle">@style/AppButton</item>
+        <item name="android:editTextStyle">@style/AppEditText</item>
+        <item name="android:radioButtonStyle">@style/AppRadioButton</item>
+        <item name="android:progressBarStyleHorizontal">@style/AppProgressBar.Horizontal</item>
+        <item name="android:seekBarStyle">@style/AppSeekBar</item>
+        <item name="android:listViewStyle">@style/AppListView</item>
+        <item name="android:gridViewStyle">@style/AppGridView</item>
+        <item name="android:dialogTheme">@style/AppDialog</item>
+        <!-- <item name="android:alertDialogTheme">@style/AppDialog.Alert</item> -->
+    </style>
+
+    <style name="AppAnimation.Activity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@android:anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="AppTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppButton" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/btn_default</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">46dp</item>
+        <item name="android:paddingRight">46dp</item>
+    </style>
+
+    <style name="AppButton.Red" parent="AppButton">
+        <item name="android:background">@drawable/btn_default_red</item>
+    </style>
+
+    <style name="AppEditText" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AppEditText.MultiLine" parent="AppEditText">
+        <item name="android:singleLine">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:gravity">left|top</item>
+        <item name="android:minHeight">144dp</item>
+    </style>
+
+    <style name="AppRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/btn_radio</item>
+    </style>
+
+    <style name="AppProgressBar.Horizontal" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">12dip</item>
+        <item name="android:maxHeight">12dip</item>
+    </style>
+
+    <style name="AppSeekBar" parent="@android:style/Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/seek_horizontal</item>
+        <item name="android:indeterminateDrawable">@drawable/seek_horizontal</item>
+        <item name="android:minHeight">6dip</item>
+        <item name="android:maxHeight">6dip</item>
+        <item name="android:thumb">@drawable/seek_thumb</item>
+        <item name="android:thumbOffset">10dip</item>
+    </style>
+
+    <style name="AppListView" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@null</item>
+    </style>
+
+    <style name="AppGridView" parent="@android:style/Widget.GridView">
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+    </style>
+
+    <style name="AppDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:windowBackground">@drawable/default_wallpaper</item> -->
+        <!-- <item name="android:windowIsTranslucent">true</item> -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="AppDialog.Translucent" parent="AppDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- <item name="android:windowBackground">@null</item> -->
+    </style>
+
+    <style name="AppDialog.Alert" parent="AppDialog">
+        <item name="android:windowBackground">@drawable/alert_bg</item>
+    </style>
+
+    <!-- 设置主界面样式 -->
+    <style name="AppBlock">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/setting_item</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <style name="AppWapper">
+        <item name="android:layout_width">@dimen/uitable_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="AppTable">
+        <item name="android:layout_width">@dimen/uitable_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <!-- Table样式 -->
+    <style name="AppTableRow">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">23dp</item>
+        <item name="android:paddingRight">23dp</item>
+    </style>
+
+    <style name="AppTableRow.Top" parent="AppTableRow">
+        <item name="android:background">@drawable/table_round_top</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTableRow.Middle" parent="AppTableRow">
+        <item name="android:background">@drawable/table_round_middle</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTableRow.Bottom" parent="AppTableRow">
+        <item name="android:background">@drawable/table_round_bottom</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTableRow.Single" parent="AppTableRow">
+        <item name="android:background">@drawable/table_round_single</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- ListView样式 -->
+    <style name="AppListItem" parent="AppTableRow">
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="AppListItem.Top" parent="AppListItem">
+        <item name="android:background">@drawable/table_round_top</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppListItem.Middle" parent="AppListItem">
+        <item name="android:background">@drawable/table_round_middle</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppListItem.Bottom" parent="AppListItem">
+        <item name="android:background">@drawable/table_round_bottom</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppListItem.Single" parent="AppListItem">
+        <item name="android:background">@drawable/table_round_single</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 导航样式 -->
+    <style name="ab_title" parent="AppTextView">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textScaleX">1.05</item>
+    </style>
+
+    <style name="ab_subtitle" parent="AppTextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textScaleX">1.05</item>
+        <item name="android:textColor">#A4A5A6</item>
+    </style>
+
+    <!-- 表格样式 -->
+    <style name="table_title" parent="AppTextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textScaleX">1.05</item>
+        <item name="android:textColor">#A4A5A6</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="table_row_title" parent="AppTextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="table_row_content" parent="AppTextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:drawableLeft">@drawable/arrows_ic_left</item>
+        <item name="android:drawableRight">@drawable/arrows_ic_right</item>
+        <item name="android:drawablePadding">35dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="table_row_content_2" parent="AppTextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:drawableRight">@drawable/item_ic_arrows</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="table_row_content_readonly" parent="AppTextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#A4A5A6</item>
+        <item name="android:drawableRight">@drawable/item_ic_arrows</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="table_row_content_readonly_2" parent="AppTextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#A4A5A6</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 内容样式 -->
+    <style name="body_title" parent="AppTextView">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="body_subtitle" parent="AppTextView">
+        <item name="android:textScaleX">0.96</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <!-- 弹窗样式 -->
+    <style name="dialog_title" parent="AppTextView">
+        <item name="android:background">@drawable/dialog_top</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="dialog_row_title" parent="AppTextView">
+        <item name="android:textScaleX">0.96</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <!-- 确认窗样式 -->
+    <style name="alert_title" parent="AppTextView">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="alert_message" parent="AppTextView">
+        <item name="android:textScaleX">0.96</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+</resources>

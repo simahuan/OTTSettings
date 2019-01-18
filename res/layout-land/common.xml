@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.pisen.ott.settings.common.CommonSettingsActivity" >
+
+    <include layout="@layout/settings_actionbar" />
+
+    <ScrollView
+        android:layout_width="@dimen/uitable_width"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/space_20"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.pisen.ott.widget.FocusLinearLayout
+                android:id="@+id/commonsettingsLayout"
+                style="@style/AppTable" >
+
+                <TextView
+                    style="@style/table_title"
+                    android:text="@string/common_personal" />
+
+                <RelativeLayout
+                    android:id="@+id/inputMethodLayout"
+                    style="@style/AppTableRow.Top" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/common_inputway" />
+
+                    <TextView
+                        android:id="@+id/txtInputMethodName"
+                        style="@style/table_row_content"
+                        android:text="百度输入法" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/childLayout"
+                    style="@style/AppTableRow.Bottom" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/common_child" />
+
+                    <TextView
+                        android:id="@+id/txtChildStatu"
+                        style="@style/table_row_content_readonly"
+                        android:text="关闭" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/table_title"
+                    android:text="@string/common_system" />
+
+                <RelativeLayout
+                    android:id="@+id/deviceNameLayout"
+                    style="@style/AppTableRow.Top" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/common_system_name" />
+
+                    <TextView
+                        android:id="@+id/txtSystemName"
+                        style="@style/table_row_content_readonly"
+                        android:text="视吧盒子" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/locationLayout"
+                    style="@style/AppTableRow.Middle" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/common_system_location" />
+
+                    <TextView
+                        android:id="@+id/txtSystemLocation"
+                        style="@style/table_row_content_readonly"
+                        android:text="成都" />
+                </RelativeLayout>
+
+                <!--
+                <RelativeLayout
+                    android:id="@+id/cecLayout"
+                    style="@style/AppTableRow.Middle" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/common_system_cec" />
+
+                    <TextView
+                        android:id="@+id/txtSystemCecStatu"
+                        style="@style/table_row_content"
+                        android:text="关闭" />
+                </RelativeLayout>
+                -->
+
+                <RelativeLayout
+                    android:id="@+id/restoreLayout"
+                    style="@style/AppTableRow.Bottom" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/common_system_restore" />
+
+                    <TextView
+                        android:id="@+id/txtSystemRestore"
+                        style="@style/table_row_content_readonly"
+                        android:text="恢复盒子的出厂设置或内容" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/table_title"
+                    android:text="@string/common_energysaving" />
+
+                <RelativeLayout
+                    android:id="@+id/sreenproLayout"
+                    style="@style/AppTableRow.Top" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/common_energysaving_sreenpro" />
+
+                    <TextView
+                        android:id="@+id/txtSreenproTime"
+                        style="@style/table_row_content_readonly"
+                        android:text="4分钟" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/autosleepLayout"
+                    style="@style/AppTableRow.Bottom" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/common_energysaving_autosleep" />
+
+                    <TextView
+                        android:id="@+id/txtAutosleepTime"
+                        style="@style/table_row_content"
+                        android:text="30分钟" />
+                </RelativeLayout>
+
+                <!--
+                <TextView
+                    style="@style/table_title"
+                    android:text="@string/common_storage" />
+
+                <RelativeLayout
+                    android:id="@+id/storageLayout"
+                    style="@style/AppTableRow.Single" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/common_storage_sd" />
+
+                    <TextView
+                        android:id="@+id/txtStorageStatu"
+                        style="@style/table_row_content"
+                        android:text="关闭" />
+                </RelativeLayout>
+                -->
+            </com.pisen.ott.widget.FocusLinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

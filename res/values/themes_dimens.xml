@@ -1,0 +1,7 @@
+<resources>
+
+    <dimen name="uitable_width">610dp</dimen>
+    <dimen name="uitable_margin_left">160dp</dimen>
+    <dimen name="uitable_margin_right">160dp</dimen>
+
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OTTSettings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    
+    <!-- 我的盒子 -->
+    <string name="setting_upgrade">系统升级</string>
+    <string name="setting_upgrade_describle">当前版本：1.3.6.1（稳定版）</string>
+    
+    <!-- 我的盒子-图像与声音 -->
+    <string name="graphics_title">图像与声音</string>
+    <string name="graphics_title_describle">盒子图像与声音的相关设置</string>
+    <string name="graphics_image">图像</string>
+    <string name="graphics_resolution">分辨率设置</string>
+    <string name="graphics_resolution_describle">盒子屏幕清晰度的设置</string>
+    <string name="graphics_zoom_displacement">缩放与位移</string>
+    <string name="graphics_zoom_displacement_des">调整画面在屏幕中的位置</string>
+    <string name="graphics_zoom_content">按下遥控器“左右键”调整屏幕百分比</string>
+    <string name="graphics_zoom">缩放</string>
+    <string name="graphics_displacement">位移</string>
+    <string name="graphics_voice">声音</string>
+    <string name="graphics_voice_output">声音输出</string>
+    <string name="graphics_compression">动态范围压缩</string>
+    
+    
+    <!-- 我的盒子-通用设置 -->
+    <string name="common_set">通用设置</string>
+    <string name="common_set_describle">盒子系统的相关设置</string>
+    <string name="common_title">管理应用程序</string>
+    <string name="common_personal">个人</string>
+    <string name="common_inputway">输入法</string>
+    <string name="common_child">儿童锁</string>
+    <string name="common_system">系统</string>
+    <string name="common_system_name">设备名称</string>
+    <string name="common_system_location">位置信息</string>
+    <string name="common_system_location_describle">选择您所在地</string>
+    <string name="common_system_cec">CEC控制</string>
+    <string name="common_system_restore">还原</string>
+    <string name="common_energysaving">节能</string>
+    <string name="common_energysaving_sreenpro">屏幕保护</string>
+    <string name="common_energysaving_autosleep">自动休眠时间</string>
+    <string name="common_storage">存储</string>
+    <string name="common_storage_sd">应用默认安装到SD卡</string>
+    
+    <!-- 通用设置_系统块 -->
+    <string name="common_system_input_device_name">请输入设备名称</string>
+    <!-- 通用设置_节能块 -->
+    <string name="common_screen_protocol_time">屏幕保护时间</string>
+    <string name="common_screen_protocol_dlg_title">屏幕时间</string>
+    <string name="common_screen_protocol_time_closed">关闭</string>
+    <string name="common_screen_protocol_time_1min">1分钟</string>
+    <string name="common_screen_protocol_time_4min">4分钟间</string>
+    <string name="common_screen_protocol_time_8min">8分钟</string>
+    <string name="common_screen_protocol_source">屏保使用本地磁盘照片</string>
+    <string name="common_screen_source_state">未插入磁盘</string>
+    <!-- 屏幕保护 -->
+    <string name="common_screen_protocol_title">屏幕保护</string>
+    <string name="common_screen_protocol_subtitle">屏保相关设置</string>
+    <string name="stock_photo_album_name">"图库照片"</string>
+    <string name="unknown_album_name">"未命名相册"</string>
+    <string name="local_source_name">"设备中的照片"</string>
+    <string name="posts_album_name">"信息中的照片"</string>
+    
+    <!-- 我的盒子-应用程序管理 -->
+    <string name="manage_title">管理应用程序</string>
+    <string name="manage_title_des">安装卸载您的盒子应用程序</string>
+    <string name="manage_menu_down">下载安装应用</string>
+    <string name="manage_menu_running">正在运行应用</string>
+    <string name="manage_menu_all">全部应用程序</string>
+    <string name="manage_app_name">应用名称</string>
+    
+    <!-- mybox-localresource-->
+    <string name="file">文件</string>
+    <string name="folder">目录</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+      <string name="toast_filesystem_readonly">无可写权限</string>
+    <string name="toast_file_has_exist">文件已经存在,请换一个名称</string>
+    <string name="toast_file_new_succeed">新建成功</string>
+    <string name="toast_unknow">未知异常</string>
+    <string name="toast_file_rename_succeed">重命名成功!</string>
+    <string name="toast_please_wait">请稍后</string>
+    <string name="toast_open_not_support">多选模式下不能执行打开操作</string>
+    <string name="toast_rename_not_support">多选模式下不能执行重命名操作</string>
+    <string name="toast_cont_open_file">无法打开 %1$s</string>
+    <string name="toast_can_not_find_a_suitable_program_to_open_this_file">没有找到合适的程序来打开此文件</string>
+    <string name="toast_operation_failed">无法执行此操作,请检查网络或其它因素</string>
+    <string name="toast_operation_failed_dirforsrcson">不能复制到子目录</string>
+    <string name="toast_inval_filename">无效的文件名</string>
+    <string name="toast_rename_succeed">重命名成功！</string>
+    <string name="toast_read_only_file_system">%1$s 无可写权限</string>
+    <string name="toast_file_not_find">文件未找到</string>
+    <string name="toast_new_folder_succeed">新建成功！</string>
+    <string name="toast_rename_or_new_folder_failed_folder_exist">操作失败,文件已存在</string>
+    <string name="toast_folder_limit">无法从指定目录复制文件</string>
+    <string name="toast_cont_move_in_same_folder">无法剪切,源文件名和目标文件名相同</string>
+    <string name="toast_operation_canceled">操作已取消</string>
+    <string name="toast_multi_operating">进入多选状态...</string>
+    <string name="toast_delete_complete">%1$s 删除成功！</string>
+    <string name="toast_paste_complete">操作成功！</string>
+    <string name="toast_sdcard_error">SDCard不存在,或者挂载失败！</string>
+    <string name="toast_innerDisk_error">innerDisk不存在，或者挂载失败！</string>
+    <string name="toast_operation_failed_sdcard_error">无法执行此操作,SDCard不存在,或者挂载失败！</string>
+    <string name="toast_usbdisk_error">usb设备不存在，或者挂载失败！</string>
+    <string name="toast_cant_cover">同一目录中无法覆盖文件</string>
+    <string name="toast_no_file_to_paste">请先选择文件，再粘贴</string>
+    <string name="toast_no_space_left">没有足够的磁盘空间，操作失败</string>
+    <string name="toast_operation_exception_interrupt">路由器不稳定,操作异常中断</string>
+    <string name="toast_create_folder_failed">复制时，创建文件夹失败</string>
+    <string name="toast_please_waite">后台有进程正在运行，请稍候！</string>
+    <string name="toast_getsize_error">文件过大，粘贴失败</string>
+    <string name="toast_getfilenumber_error">文件过大，删除失败</string>
+    <string name="toast_paste_not_allowed">不能复制,目标文件不能为原文件的子目录</string>
+    <string name="toast_press_one_more_to_exit">再按一次退出程序！</string>
+    
+    
+    <!-- system_upgrade -->
+    <!-- dialog -->
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="btn_positive">确定</string>
+    <string name="btn_negative">取消</string>
+    <string name="btn_positive_jljc">存储</string>
+    <string name="btn_hide">隐藏</string>
+    <string name="btn_negative_jljc">放弃</string>
+    <string name="btn_refresh">刷新</string>
+    <string name="btn_connect">连接</string>
+    <!-- weather -->
+    
+    <!--关于模块-->
+    <string name="about_title">关于</string>
+    <string name="about_title_describle">本机的相关信息</string>
+    <string name="about_contact_service">联系客服</string>
+    <string name="about_contact_service_describle">联系品胜客服</string>
+    
+    <string name="about_native_machine">关于本机</string>
+    <string name="about_device_name">设备名称</string>
+    <string name="about_device_value">客厅的视吧盒子</string>
+    <string name="about_product_mode">产品型号</string>
+    <string name="about_product_value">pisen_视吧盒子</string>
+    <string name="about_wifi_addr">wifi地址</string>
+    <string name="about_wifi_mac">98:3b:45:13:56:h8</string>
+    <string name="about_bluetooth_addr">蓝牙地址</string>
+    <string name="about_bluetooth_mac">10:89:u7:e8:rt:89:44</string>
+    <string name="about_ip_addr">IP地址</string>
+    <string name="about_ip_mac">192.168.24.103</string>
+    <string name="about_television_serial">广电序列号</string>
+    <string name="about_television_value">01124343325465</string>
+    <string name="about_software_version">软件版本</string>
+    <string name="about_software_value">1.3.6.1(稳定版)</string>
+    <string name="about_devices_reset">恢复出厂设置</string>
+    <string name="about_legal_information">法律信息</string>
+    <string name="about_legal">法律</string>
+    
+    <string name="about_copyright_complaints">版权保护投诉指引</string>
+    <string name="about_privacy_policy">隐私政策</string>
+    <string name="about_user_agreement">用户协议</string>
+    
+    <string name="about_user_agreement_data">修正了"所以我们只需要先从保存的数据中得到原先的序号，将此序号作为checkedItem参数传入即可"部分协议.</string>
+
+    <string name="about_contact_service_tips">"如果你有什么问题可以联系品胜客服"</string>
+    <string name="about_contact_service_telephone">"联系电话：400-088-989"</string>
+    <string name="about_contact_service_qq">"QQ客服：938043139"</string>
+    <string name="about_contact_service_weixin">"微信帐号:扫一扫左侧的二维码"</string>
+</resources>

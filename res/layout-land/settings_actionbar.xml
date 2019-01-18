@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="90dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="37dp" >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/setting_ic_back"
+            android:drawablePadding="13dp"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="@android:color/white"
+            android:textScaleX="1.05"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="二级标题"
+            android:textColor="#A4A5A6"
+            android:textScaleX="1.05"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</FrameLayout>

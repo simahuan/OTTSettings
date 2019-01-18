@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="array_resolution">
+        <item >自动识别</item>
+        <item >4K2K 24HZ(3840x2160)</item>
+        <item >1080P 60HZ (1920x1080)</item>
+        <item >1080P 50HZ (1920x1080推荐)</item>
+        <item >720P 60HZ (1280x720)</item>
+        <item >720P 50HZ (1280x720)</item>
+    </string-array>
+    
+    <string-array name="array_on_off">
+        <item >关闭</item>
+        <item >开启</item>
+    </string-array>
+    
+    <string-array name="array_voice_output">
+        <item >模拟音频输出</item>
+        <item >S/PDIF-PCM</item>
+        <item >S/PDIF-Raw</item>
+    </string-array>
+        
+    <string-array name="screenpro_dialog_items">
+        <item>关闭</item>
+        <item>1分钟</item>
+        <item>4分钟</item>
+        <item>8分钟</item>
+    </string-array>
+    
+</resources>

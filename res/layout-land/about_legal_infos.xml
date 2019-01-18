@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.pisen.ott.settings.about.AboutActivity" >
+
+    <include layout="@layout/settings_actionbar" />
+
+    <com.pisen.ott.widget.FocusLinearLayout
+        android:id="@+id/legalInfosLayout"
+        style="@style/AppTable" >
+
+        <RelativeLayout style="@style/AppTableRow.Top" >
+
+            <TextView
+                style="@style/table_row_title"
+                android:text="@string/about_copyright_complaints" />
+
+            <TextView style="@style/table_row_content_readonly" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/AppTableRow.Middle" >
+
+            <TextView
+                style="@style/table_row_title"
+                android:text="@string/about_privacy_policy" />
+
+            <TextView style="@style/table_row_content_readonly" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lrel_user_agreement"
+            style="@style/AppTableRow.Bottom" >
+
+            <TextView
+                style="@style/table_row_title"
+                android:text="@string/about_user_agreement" />
+
+            <TextView style="@style/table_row_content_readonly" />
+        </RelativeLayout>
+    </com.pisen.ott.widget.FocusLinearLayout>
+
+</LinearLayout>

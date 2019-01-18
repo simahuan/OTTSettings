@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.pisen.ott.settings.graphics.GraphicsActivity" >
+
+    <include layout="@layout/settings_actionbar" />
+
+    <ScrollView
+        android:layout_width="@dimen/uitable_width"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/space_20"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.pisen.ott.widget.FocusLinearLayout
+                android:id="@+id/graphicsLayout"
+                style="@style/AppTable" >
+
+                <TextView
+                    style="@style/table_title"
+                    android:text="@string/graphics_image" />
+
+                <RelativeLayout
+                    android:id="@+id/resolutionLayout"
+                    style="@style/AppTableRow.Top" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/graphics_resolution" />
+
+                    <TextView
+                        android:id="@+id/txtResolution"
+                        style="@style/table_row_content_readonly"
+                        android:text="1080P 50HZ" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/zoomDisplacementLayout"
+                    style="@style/AppTableRow.Bottom" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/graphics_zoom_displacement" />
+
+                    <TextView
+                        android:id="@+id/txtZoomDisplacementStatu"
+                        style="@style/table_row_content_readonly"
+                        android:text="" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/table_title"
+                    android:text="@string/graphics_voice" />
+
+                <RelativeLayout
+                    android:id="@+id/voiceOutputLayout"
+                    style="@style/AppTableRow.Top" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/graphics_voice_output" />
+
+                    <TextView
+                        android:id="@+id/txtZoom"
+                        style="@style/table_row_content"
+                        android:text="模拟音频输出" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/compressionLayout"
+                    style="@style/AppTableRow.Bottom" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/graphics_compression" />
+
+                    <TextView
+                        android:id="@+id/txtCompression"
+                        style="@style/table_row_content"
+                        android:text="已开启" />
+                </RelativeLayout>
+            </com.pisen.ott.widget.FocusLinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

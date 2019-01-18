@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.pisen.ott.settings.graphics.ZoomDisplacementActivity" >
+
+    <include layout="@layout/settings_actionbar" />
+
+    <ScrollView
+        android:layout_width="@dimen/uitable_width"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/space_20"
+        android:scrollbars="none" >
+
+        <com.pisen.ott.widget.FocusLinearLayout
+            android:id="@+id/zoomdispLayout"
+            style="@style/AppTable" >
+
+            <RelativeLayout
+                android:id="@+id/zoomLayout"
+                style="@style/AppTableRow.Top" >
+
+                <TextView
+                    style="@style/table_row_title"
+                    android:text="@string/graphics_zoom" />
+
+                <TextView
+                    android:id="@+id/txtZoom"
+                    style="@style/table_row_content"
+                    android:text="模拟音频输出" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/displacementLayout"
+                style="@style/AppTableRow.Bottom" >
+
+                <TextView
+                    style="@style/table_row_title"
+                    android:text="@string/graphics_displacement" />
+
+                <TextView
+                    android:id="@+id/txtZoomDisplacementStatu"
+                    style="@style/table_row_content_readonly"
+                    android:text="" />
+            </RelativeLayout>
+        </com.pisen.ott.widget.FocusLinearLayout>
+    </ScrollView>
+
+</LinearLayout>

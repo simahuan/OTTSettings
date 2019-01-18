@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:su="http://schemas.android.com/apk/res-auto" >
+
+    <!--
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:su="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    -->
+
+    <com.pisen.ott.settings.common.location.ScrollerNumberPicker
+        android:id="@+id/province"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        su:itemNumber="5"
+        su:lineColor="@color/darkblue"
+        su:maskHight="32dp"
+        su:noEmpty="true"
+        su:normalTextColor="@color/graywhite"
+        su:normalTextSize="14sp"
+        su:selecredTextColor="@color/white"
+        su:selecredTextSize="24sp"
+        su:unitHight="50dp" />
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@drawable/location_city_line"
+        android:contentDescription="@string/app_name" />
+
+    <com.pisen.ott.settings.common.location.ScrollerNumberPicker
+        android:id="@+id/city"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        su:itemNumber="5"
+        su:lineColor="@color/darkblue"
+        su:maskHight="32dp"
+        su:noEmpty="true"
+        su:normalTextColor="@color/graywhite"
+        su:normalTextSize="14sp"
+        su:selecredTextColor="@color/white"
+        su:selecredTextSize="24sp"
+        su:unitHight="50dp" />
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@drawable/location_city_line"
+        android:contentDescription="@string/app_name" />
+
+    <com.pisen.ott.settings.common.location.ScrollerNumberPicker
+        android:id="@+id/area"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        su:itemNumber="5"
+        su:lineColor="@color/darkblue"
+        su:maskHight="32dp"
+        su:noEmpty="true"
+        su:normalTextColor="@color/graywhite"
+        su:normalTextSize="14sp"
+        su:selecredTextColor="@color/white"
+        su:selecredTextSize="24sp"
+        su:unitHight="50dp" />
+
+    <!-- </LinearLayout> -->
+
+</merge>

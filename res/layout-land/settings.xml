@@ -1,0 +1,69 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.pisen.ott.widget.FocusGridLayout
+        android:id="@+id/settingsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:rowCount="2" >
+
+        <TextView
+            android:id="@+id/btnWifi"
+            style="@style/AppBlock"
+            android:layout_column="0"
+            android:layout_margin="16dp"
+            android:layout_row="0"
+            android:drawableTop="@drawable/setting_ic_wifi"
+            android:text="网络设置" />
+
+        <TextView
+            android:id="@+id/btnGraphics"
+            style="@style/AppBlock"
+            android:layout_column="1"
+            android:layout_margin="16dp"
+            android:layout_row="0"
+            android:drawableTop="@drawable/setting_ic_graphics"
+            android:text="图像与声音" />
+
+        <TextView
+            android:id="@+id/btnAccount"
+            style="@style/AppBlock"
+            android:layout_column="2"
+            android:layout_margin="16dp"
+            android:layout_row="0"
+            android:drawableTop="@drawable/setting_ic_account"
+            android:text="帐户与安全" />
+
+        <TextView
+            android:id="@+id/btnComm"
+            style="@style/AppBlock"
+            android:layout_column="0"
+            android:layout_margin="16dp"
+            android:layout_row="1"
+            android:drawableTop="@drawable/setting_ic_common"
+            android:text="通用设置" />
+
+        <TextView
+            android:id="@+id/btnUpdate"
+            style="@style/AppBlock"
+            android:layout_column="1"
+            android:layout_margin="16dp"
+            android:layout_row="1"
+            android:drawableTop="@drawable/setting_ic_update"
+            android:text="系统升级" />
+
+        <TextView
+            android:id="@+id/btnAbout"
+            style="@style/AppBlock"
+            android:layout_column="2"
+            android:layout_margin="16dp"
+            android:layout_row="1"
+            android:drawableTop="@drawable/setting_ic_about"
+            android:text="关于" />
+    </com.pisen.ott.widget.FocusGridLayout>
+
+</FrameLayout>

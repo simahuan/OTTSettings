@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.pisen.ott.settings.about.AboutActivity" >
+
+    <include
+        android:id="@+id/inc_about_head"
+        layout="@layout/settings_actionbar" />
+
+    <ScrollView
+        android:layout_width="@dimen/uitable_width"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_20"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.pisen.ott.widget.FocusLinearLayout
+                android:id="@+id/aboutSettingsLayout"
+                style="@style/AppTable" >
+
+                <!-- 联系客服Item -->
+
+                <RelativeLayout
+                    android:id="@+id/contactLayout"
+                    style="@style/AppTableRow.Single" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/about_contact_service" />
+
+                    <TextView style="@style/table_row_content_readonly" />
+                </RelativeLayout>
+
+                <!-- 关于本机 -->
+
+                <TextView
+                    style="@style/table_title"
+                    android:text="@string/about_native_machine" />
+
+                <!-- 设备名称 -->
+
+                <RelativeLayout
+                    android:id="@+id/deviceNameLayout"
+                    style="@style/AppTableRow.Top" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/about_device_name" />
+
+                    <TextView
+                        android:id="@+id/txt_device_value"
+                        style="@style/table_row_content_readonly_2"
+                        android:text="@string/about_device_value" />
+                </RelativeLayout>
+
+                <!-- 产品名称 -->
+
+                <RelativeLayout
+                    android:id="@+id/productLayout"
+                    style="@style/AppTableRow.Middle"
+                    android:layout_marginTop="-2dp" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/about_product_mode" />
+
+                    <TextView
+                        android:id="@+id/txt_product_value"
+                        style="@style/table_row_content_readonly_2"
+                        android:text="@string/about_product_value" />
+                </RelativeLayout>
+
+                <!-- wifi地址 -->
+
+                <RelativeLayout
+                    android:id="@+id/wifiAddrLayout"
+                    style="@style/AppTableRow.Middle"
+                    android:layout_marginTop="-2dp" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/about_wifi_addr" />
+
+                    <TextView
+                        android:id="@+id/txt_wifi_value"
+                        style="@style/table_row_content_readonly_2"
+                        android:text="@string/about_wifi_mac" />
+                </RelativeLayout>
+
+                <!-- 蓝牙Item -->
+
+                <RelativeLayout
+                    android:id="@+id/bluetoothLayout"
+                    style="@style/AppTableRow.Middle"
+                    android:layout_marginTop="-2dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/about_bluetooth_addr" />
+
+                    <TextView
+                        android:id="@+id/txt_bluetooth_addr"
+                        style="@style/table_row_content_readonly_2"
+                        android:text="@string/about_bluetooth_mac" />
+                </RelativeLayout>
+
+                <!-- ip Item -->
+
+                <RelativeLayout
+                    android:id="@+id/ipAddrLayout"
+                    style="@style/AppTableRow.Middle"
+                    android:layout_marginTop="-2dp" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/about_ip_addr" />
+
+                    <TextView
+                        android:id="@+id/txt_ip_addr"
+                        style="@style/table_row_content_readonly_2"
+                        android:text="@string/about_ip_mac" />
+                </RelativeLayout>
+
+                <!-- 广电序列号 Item -->
+
+                <RelativeLayout
+                    android:id="@+id/radioTelevisionLayout"
+                    style="@style/AppTableRow.Middle"
+                    android:layout_marginTop="-2dp" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/about_television_serial" />
+
+                    <TextView
+                        android:id="@+id/txt_television_sequence"
+                        style="@style/table_row_content_readonly_2"
+                        android:text="@string/about_television_value" />
+                </RelativeLayout>
+
+                <!-- 软件版本 Item -->
+
+                <RelativeLayout
+                    android:id="@+id/softwareVersionLayout"
+                    style="@style/AppTableRow.Middle"
+                    android:layout_marginTop="-2dp" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/about_software_version" />
+
+                    <TextView
+                        android:id="@+id/txt_software_version"
+                        style="@style/table_row_content_readonly"
+                        android:text="@string/about_software_value" />
+                </RelativeLayout>
+
+                <!-- 恢复出厂设置 Item -->
+
+                <RelativeLayout
+                    android:id="@+id/resetLayout"
+                    style="@style/AppTableRow.Bottom"
+                    android:layout_marginTop="-2dp" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/about_devices_reset" />
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/table_title"
+                    android:text="@string/about_legal" />
+
+                <!-- 法律Item -->
+
+                <RelativeLayout
+                    android:id="@+id/legalLayout"
+                    style="@style/AppTableRow.Single" >
+
+                    <TextView
+                        style="@style/table_row_title"
+                        android:text="@string/about_legal_information" />
+
+                    <TextView style="@style/table_row_content_readonly" />
+                </RelativeLayout>
+            </com.pisen.ott.widget.FocusLinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

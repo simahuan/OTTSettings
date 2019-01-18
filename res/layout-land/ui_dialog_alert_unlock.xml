@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/default_wallpaper"
+  >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/lryPassWordShow"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="你的家长密码: "
+            android:textSize="20dp" />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgPassWord1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/key_ic_right"/>
+          <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgPassWord2"
+             android:layout_marginLeft="5dp"
+             android:background="@drawable/key_ic_right"/>
+              <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgPassWord3"
+             android:layout_marginLeft="5dp"
+             android:background="@drawable/key_ic_right"/>
+                 <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgPassWord4"
+             android:layout_marginLeft="5dp"
+             android:background="@drawable/key_ic_right"/>
+                   <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgPassWord5"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/key_ic_right"/>
+          <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgPassWord6"
+             android:layout_marginLeft="5dp"
+             android:background="@drawable/key_ic_right"/>
+              <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgPassWord7"
+             android:layout_marginLeft="5dp"
+             android:background="@drawable/key_ic_right"/>
+                 <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgPassWord8"
+             android:layout_marginLeft="5dp"
+             android:background="@drawable/key_ic_right"/>
+  
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="480dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alert_bg"
+        android:id="@+id/alertDialogTip"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+      >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="请输入儿童密码" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text"
+            android:textColor = "@android:color/white"
+     
+            android:ems="10" >
+         
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lrel_password_notSet"
+        android:visibility="gone">
+           <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="密码未设置，是否要设置？如按取消，初始密码则为：" />
+
+            <ImageView
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/childrenlock_direction" />
+            
+    </LinearLayout>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:id="@+id/view_divideline"
+            android:background="#4D4E4E" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" 
+            android:id="@+id/ShowTextTip">"
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="输入完成后，按遥控器确认键" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:gravity="center" 
+            android:visibility="gone"
+            android:id="@+id/buttonShow">
+       
+            <Button
+                android:id="@+id/btn_cancle"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="从新输入" 
+                android:background="@drawable/btn_default"/>
+
+            <Button
+                android:id="@+id/btn_ok"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找回密码"
+                android:background="@drawable/btn_default" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
+</RelativeLayout>
